@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    height: calc(100vh - 100px);
+    background-color: #141922;
+    display: flex;
+    color: #fff;
+}
+
+header{
+    display: flex;
+    position: sticky;
+    height: 75px;
+    background-color: #080B12;
+    top: 0;
+    justify-content: end;
+    align-items: center;
+}
+
+header button{
+    background-color: black;
+    height: 40%;
+    width: 30%;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    margin-right: 10px;
+}
+
+footer{
+    height: 100px;
+    background-color: black;
+}
+
+.sidebar{
+    height: 100%;
+    width: 150px;
+    background-color: black;
+    padding: 0px 10px;
+    color: #A3A3A3;
+}
+
+.sidebar-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content{
+    width: calc(100% - 150px);
+    overflow-y: auto;
+    font-weight: 700;
+}
+
+.logo{
+    padding-top: 10px;
+    background-color: black;
+}
+
+.sidebar-list li{
+    list-style-type: none;
+    padding: 5px 0px;
+}
+.sidebar-list h4{
+    color: #fff;
+}
+
+.home-index{
+    display: flex;
+    justify-content: center;
+}
+
+.home-index li{
+    display: inline-block;
+    padding: 10px 5px;
+    color: #A3A3A3;
+    font-size: 13px;
+}
+
+.home-first-section{
+    margin: 20px;
+    height: 180px;
+}
+
+.home-first-section h2{
+    padding-left: 30px;
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding: 20px;
+}
+
+.card div{
+    padding: 0px 10px;
+}
+
+.card p{
+    color: #A3A3A3;
+}
+
+main img{
+    width: 100%;
+}
+
+/* FOOTER */
+footer{
+    height: 100px;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+}
+
+.footer-img img{
+    width: 100%;
+}
+
+.col-30{
+    width: 30%;
+}
+
