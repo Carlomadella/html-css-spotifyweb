@@ -1,4 +1,4 @@
-/* Modalità desktop LG */
+/* Modalità DESKTOP lg */
 *{
     padding: 0;
     margin: 0;
@@ -40,8 +40,12 @@ header button{
     height: 100%;
     width: 150px;
     background-color: black;
-    padding: 0px 10px;
     color: #A3A3A3;
+    overflow-y: auto;
+}
+
+#hidden-logo{
+    display: none;
 }
 
 .sidebar-content{
@@ -68,9 +72,35 @@ header button{
 }
 
 .sidebar-list li{
+    width: 100%;
     list-style-type: none;
-    padding: 5px 0px;
+    padding: 5px 10px 5px 10px;
     font-size: 14px;
+}
+
+.sidebar-list i{
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.sidebar-list div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.icon-home, #icon-search, #libreria{
+    width: 100%;
+}
+
+.sidebar-list img{
+    padding-right: 5px;
+}
+
+#green-border{
+    border-left: 4px solid #ADFF2F;
 }
 
 .sidebar-list h4{
@@ -80,6 +110,11 @@ header button{
 
 .sidebar-footer{
     width: calc(100%-20%);
+}
+
+.sidebar-footer i{
+    color: white;
+    font-size: 15px;
 }
 /* home */
 .home-index{
@@ -172,6 +207,8 @@ footer{
     justify-content: space-around;
     align-items: center;
     color:#fff;
+    position: relative;
+    z-index: 1;
 }
 /* footer-left-side */
 .footer-left-side{
@@ -230,13 +267,13 @@ footer{
 .mid-progress-bar{
     display: flex;
     height: 4px;
-    width: 300px;
+    width: 400px;
     background-color:#A3A3A3;
 }
 
 .active-mid-bar{
     height: 4px;
-    width: 50px;
+    width: 70px;
     background-color: white;
     border-radius: 20px;
 }
@@ -359,11 +396,12 @@ footer{
 
     .icons-mid{
         justify-content: center;
+        align-content: center;
     }
 
     .icons-mid i{
-        width: 2px;
-        padding: 0px 20px 10px 10px;
+        font-size: 15px;
+        padding: 0px 15px 10px 15px;
     }
 
     .footer-right-side{
@@ -371,10 +409,78 @@ footer{
     }
 
     .right-progress-bar{
-        width: 50px;
+        width: 60px;
     }
 
     .active-right-bar{
+        width: 40px;
+    }
+
+    .footer-mid i{
+        width: 0px;
+    }
+
+    .footer-right-side i{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .sidebar{
+        width: 50px;
+        padding: 0px;
+    }
+
+    .hidden-mobile{
+        display: none;
+    }
+
+    .content{
+        height: calc(100vh - 50px);
+        width: calc(100% - 50px);
+    }
+
+    .content li{
+        width: 25%;
+    }
+
+    footer{
+        height: 50px;
+    }
+
+    .logo{
         width: 30px;
+        height: 30px;
+        align-content: center;
+    }
+
+    #green-border{
+        border: none;
+    }
+
+    #hidden-logo{
+        display: block;
+        margin-left: 9px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .icons-mid{
+        font-size: 3px;
+    }
+
+    .footer-right-side i{
+        margin: 0px;
+    }
+
+    .right-progress-bar{
+        width: 35px;
+    }
+
+    .active-right-bar{
+        width: 25px;
     }
 }

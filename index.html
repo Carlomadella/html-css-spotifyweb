@@ -16,29 +16,59 @@
 <main>
     <div class="sidebar">
         <div class="logo">
-            <img src="./img/logo.svg" alt="">
+            <img class="hidden-mobile" src="./img/logo.svg" alt="">
+            <img id="hidden-logo" src="./img/logo-small.svg" alt="">
         </div>
         <div class="sidebar-content">
             <div class="sidebar-list">
                 <ul>
-                    <li>Home</li>
-                    <li>Cerca</li>
-                    <li>La tua libreria</li>
-                    <h4>PLAYLIST</h4>
-                    <li><i class="fa-solid fa-square-plus fa-xl"></i>Crea playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
+                    <li id="green-border"> <!--Sistemare foto creando un div e un p-->
+                        <div class="icon-home">
+                            <div>
+                                <img src="./img/home.svg" alt="">
+                            </div>
+                            <span class="hidden-mobile">Home</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="icon-search">
+                            <div>
+                                <img src="./img/search.svg" alt="">
+                            </div>
+                            <span class="hidden-mobile">Cerca</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="libreria">
+                            <div>
+                                <img src="./img/libreria.svg" alt="">
+                            </div>
+                            <span class="hidden-mobile">La tua libreria</span>
+                        </div>
+                    </li>
+                    <h4 class="hidden-mobile">PLAYLIST</h4>
+                    <li class="hidden-mobile"><i class="fa-solid fa-square-plus fa-xl"></i>Crea playlist</li>
+                    <li class="hidden-mobile">Nome playlist</li>
+                    <li class="hidden-mobile">Nome playlist</li>
+                    <li class="hidden-mobile">Nome playlist</li>
+                    <li class="hidden-mobile">Nome playlist</li>
+                    <li class="hidden-mobile">Nome playlist</li>
+                    <li class="hidden-mobile">Nome playlist</li>
+                    <li class="hidden-mobile">Nome playlist</li>
                 </ul>
             </div>
-            <div class="sidebar-footer">
-                <p>Installa app</p>
+            <div class="sidebar-footer hidden-mobile">
+                <div>
+                    <i class="fa-regular fa-circle-down" style="color: #ffffff;"></i>
+                    Installa app
+                </div>
                 <hr>
-                <p>John Doe</p>
+                <div class="icon-home">
+                    <div>
+                        <img src="./img/profile.svg" alt="">
+                    </div>
+                    <span class="hidden-mobile">John Doe</span>
+                </div>
             </div>
         </div>
         
@@ -112,17 +142,15 @@
             </div>
         </div>
         <div class="home-third-section">
-            <h2>Recently played</h2>
+            <h2>Artisti più ascoltati</h2>
             <div class="cards">
                 <div class="card">
-                    <img src="./img/metal_lifting.jpg" alt="">
-                    <h3>Heavy metal</h3>
-                    <p>subtitle</p>
+                    <img src="./img/youg.jpeg" alt="">
+                    <h3>Lana del Rey</h3>
                 </div>
                 <div class="card">
-                    <img src="./img/stranger.jpeg" alt="">
-                    <h3>Heavy metal</h3>
-                    <p>subtitle</p>
+                    <img src="./img/einaudi.jpeg" alt="">
+                    <h3>Ludovico Einaudi</h3>
             </div>
         </div>
     </div>
