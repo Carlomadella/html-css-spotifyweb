@@ -218,7 +218,6 @@ footer{
     display: flex;
     justify-content: center;
     width: 100%;
-    
 }
 
 .volume-bar{
@@ -329,5 +328,53 @@ footer{
     .right-progress-bar{
         margin-left: 15px;
         width: 90px;
+    }
+}
+
+/* modalità SMALL sm */
+@media screen and (max-width: 576px){
+    .card{
+        width: 50%;
+    }
+
+    .home-index ul{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .home-index li{
+        width: 30%;
+        font-size: 12px;
+    }
+
+    .active-song{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icons-mid{
+        justify-content: center;
+    }
+
+    .icons-mid i{
+        width: 2px;
+        padding: 0px 20px 10px 10px;
+    }
+
+    .footer-right-side{
+        justify-content: flex-start;
+    }
+
+    .right-progress-bar{
+        width: 50px;
+    }
+
+    .active-right-bar{
+        width: 30px;
     }
 }
