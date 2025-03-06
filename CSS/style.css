@@ -1,4 +1,4 @@
-/* Modalità DESKTOP lg */
+/* Modalità DESKTOP lg 1000*/
 *{
     padding: 0;
     margin: 0;
@@ -103,9 +103,10 @@ header button{
     border-left: 4px solid #ADFF2F;
 }
 
-.sidebar-list h4{
+.sidebar-list ul h4{
     color: #fff;
-    padding: 10px 0px;
+    margin: 10px 0px;
+    padding-left: 10px;
 }
 
 .sidebar-footer{
@@ -116,6 +117,27 @@ header button{
     color: white;
     font-size: 15px;
 }
+
+.icon-home{
+    display: flex;
+}
+
+.download-pic{
+    width: 15px;
+    margin: 0px 10px;
+}
+
+.profile-pic{
+    width: 15px;
+    margin: 0px 10px;
+}
+
+hr{
+    margin: 5px 10px;
+    height: 2px;
+    color: #A3A3A3;
+}
+
 /* home */
 .home-index{
     display: flex;
@@ -144,6 +166,7 @@ header button{
 .home-first-section h2{
     padding-left: 30px;
 }
+
 /* cards */
 .cards{
     display: flex;
@@ -210,6 +233,7 @@ footer{
     position: relative;
     z-index: 1;
 }
+
 /* footer-left-side */
 .footer-left-side{
     display: flex;
@@ -239,11 +263,14 @@ footer{
 .active-song p{
     font-size: 14px;
 }
+
 /* footer-mid */
 .footer-mid{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
 .footer-mid i{
@@ -282,6 +309,7 @@ footer{
     font-size: 12px;
     padding: 0px 10px;
 }
+
 /* footer-right-side */
 .footer-right-side{
     display: flex;  
@@ -295,7 +323,6 @@ footer{
 
 .right-progress-bar{
     height: 4px;
-    width: 150px;
     background-color:#A3A3A3;
 }
 
@@ -350,12 +377,10 @@ footer{
     }
 
     .footer-right-side{
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .footer-right-side i{
-        width: 10px;
-        margin: 0px 5px;
     }
 
     .active-right-bar{
@@ -363,7 +388,6 @@ footer{
     }
 
     .right-progress-bar{
-        margin-left: 15px;
         width: 90px;
     }
 }
@@ -468,19 +492,26 @@ footer{
         width: 100%;
     }
 
-    .icons-mid{
-        font-size: 3px;
+    .icons-mid i{
+        font-size: 7px;
     }
 
     .footer-right-side i{
-        margin: 0px;
     }
 
     .right-progress-bar{
-        width: 35px;
+        width: 20px;
     }
 
     .active-right-bar{
         width: 25px;
     }
+}
+
+.fit-content{
+    width: fit-content;
+}
+
+.active-song{
+    height: 100%;
 }
