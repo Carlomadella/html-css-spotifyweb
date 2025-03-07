@@ -334,6 +334,19 @@ footer{
     width: 60%;
     background-color: white;
     border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    top: -3px;
+    background-color: #fff;
 }
 
 .icons-right-side{
@@ -403,7 +416,13 @@ footer{
     color: white;
 }
 
+.active-right-bar:hover{
+    background-color: #ADFF2F;
+}
 
+.active-right-bar:hover .dot{
+    display: inline;
+}
 
 /* modalità MEDIUM md */
 @media screen and (max-width: 768px){
