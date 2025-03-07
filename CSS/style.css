@@ -374,8 +374,8 @@ footer{
 
 .back-icon{
     position: absolute;
-    bottom: 60px;
-    left: 60px;
+    bottom: 35px;
+    left: 35px;
     font-size: 40px;
 }
 
@@ -424,7 +424,7 @@ footer{
     display: inline;
 }
 
-/* modalità MEDIUM md */
+/* modalità MEDIUM md 768px*/
 @media screen and (max-width: 768px){
     .home-index ul{
         display: flex;
@@ -450,6 +450,11 @@ footer{
 
     .footer-right-side{
         justify-content: center;
+    }
+
+    .back-icon{
+        bottom: 40px;
+        left: 40px;
     }
 }
 
@@ -499,9 +504,18 @@ footer{
     .footer-right-side i{
         font-size: 12px;
     }
+
+    .back-icon{
+        bottom: 60px;
+        left: 60px;
+    }
 }
 
 @media screen and (max-width: 400px) {
+
+    .main{
+        height: calc(100vh - 50px);
+    }
 
     .sidebar{
         width: 50px;
@@ -541,8 +555,13 @@ footer{
     }
 
     .icons-mid i{
-        font-size: 7px;
+        font-size: 10px;
         padding: 0px 0px 5px 0px;
+    }
+
+    .back-icon{
+        bottom: 37px;
+        left: 37px;
     }
 }
 
