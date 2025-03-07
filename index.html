@@ -64,7 +64,7 @@
                     </div>
                     <span class="hidden-mobile">Installa app</span>
                 </div>
-                <hr>
+                <hr class="hidden-mobile">
                 <div class="icon-home">
                     <div class="profile-pic">
                         <img src="./img/profile.svg" alt="">
@@ -92,35 +92,54 @@
         </div>
         <div class="home-first-section">
             <h2>Recently played</h2>
-            <div class="cards">
+            <div class="cards"> 
                 <div class="card">
                     <img src="./img/metal_lifting.jpg" alt="">
-                    
+                    <div class="card-content">
+                        <i class="fa-solid fa-circle-play play back-icon hidden"></i>
+                    </div>
                     <h3>Heavy metal</h3>
                     <p>subtitle</p>
                 </div>
                 <div class="card">
-                    <img src="./img/stranger.jpeg" alt="">
-                    <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
-                    <p>Kyle Dixon & Michael Stein</p>
+                    <img id="stranger" src="./img/stranger.jpeg" alt="">
+                    <div class="card-content">
+                        <i class="fa-solid fa-circle-play play back-icon hidden"></i>
+                    </div>
+                    <div class="description">
+                        <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                        <p>Kyle Dixon & Michael Stein</p>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="./img/aquietplace.jpeg" alt="">
+                    <div class="card-content">
+                        <i class="fa-solid fa-circle-play play back-icon hidden"></i>
+                    </div>
                     <h3>A quiet place</h3>
                     <p>subtitle</p>
                 </div>
                 <div class="card">
                     <img src="./img/split.jpeg" alt="">
+                    <div class="card-content">
+                        <i class="fa-solid fa-circle-play play back-icon hidden"></i>
+                    </div>
                     <h3>Split</h3>
                     <p>subtitle</p>
                 </div>
                 <div class="card">
                     <img src="./img/cure.jpeg" alt="">
+                    <div class="card-content">
+                        <i class="fa-solid fa-circle-play play back-icon hidden"></i>
+                    </div>
                     <h3>A cure for welness</h3>
                     <p>subtitle</p>
                 </div>
                 <div class="card">
                     <img src="./img/sinister.jpeg" alt="">
+                    <div class="card-content">
+                        <i class="fa-solid fa-circle-play play back-icon hidden"></i>
+                    </div>
                     <h3>Sinister</h3>
                     <p>subtitle</p>
                 </div>
@@ -187,13 +206,13 @@
 
                     <i class="fa-solid fa-backward-step"></i>
                     
-                    <i class="fa-solid fa-circle-play"></i>
+                    <i id="footer-play" class="fa-solid fa-circle-play"></i>
                     
                     <i class="fa-solid fa-forward-step"></i>
                     
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>
-                <div class="volume-bar"> 
+                <div class="time-bar"> 
                     <div class="time-digit">0:25</div>
                         <div class="mid-progress-bar">
                             <div class="active-mid-bar"></div> 
@@ -211,8 +230,11 @@
                 <i class="fa-solid fa-tv"></i>
 
                 <i class="fa-solid fa-volume-high"></i>
-                <div class="right-progress-bar"></div>
-                <div class="active-right-bar"></div> 
+                <div class="volume-bar">
+                    <div class="right-progress-bar">
+                        <div class="active-right-bar"></div>
+                    </div>
+                </div> 
             </div>
         </div>
     </footer>
